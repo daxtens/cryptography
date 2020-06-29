@@ -20,6 +20,9 @@ matrix:
     include:
         - python: 3.8
           env: TOXENV=pep8
+        - python: 3.8
+          env: TOXENV=pep8
+          arch: ppc64le
         # Setting 'python' is just to make travis's UI a bit prettier
         - python: 3.6
           env: TOXENV=py36
@@ -43,6 +46,9 @@ matrix:
         - python: 3.8
           env: TOXENV=py38 OPENSSL=1.1.1g
         - python: 3.8
+          env: TOXENV=py38 OPENSSL=1.1.1g
+          arch: ppc64le
+        - python: 3.8
           env: TOXENV=py38 OPENSSL=1.1.1g OPENSSL_CONFIG_FLAGS="no-engine no-rc2"
         - python: 3.8
           env: TOXENV=py38-ssh OPENSSL=1.1.1g
@@ -54,6 +60,9 @@ matrix:
           env: TOXENV=py38 LIBRESSL=3.1.2
         - python: 3.8
           env: TOXENV=py38 LIBRESSL=3.2.0
+        - python: 3.8
+          env: TOXENV=py38 LIBRESSL=3.2.0
+          arch: ppc64le
 
         - python: 2.7
           services: docker
